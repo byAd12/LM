@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adrián L. G. P.</title>
+    </head>
+    <body>
+        <h1>Tienda</h1>
+        <h2>Carrito de la compra</h2>
+
+        <form method="post">
+            <fieldset style="width: 50%;">
+                <legend>Primero, inicie sesión</legend>
+                
+                <label for="NombreSolicitante">Nombre:</label>
+                <input type="text" id="NombreSolicitante" placeholder="Pedido a nombre de..." name="Solicitante del pedido" required>
+                <br>
+                <label for="TlfSolicitante">Contraseña:</label>
+                <input type="password" id="ContrasenaSolicitante" placeholder="Tu contraseña..." name="Contraseña del solicitante" required>
+            </fieldset>
+
+            <div style="display: flex;">
+                <fieldset style="width: 50%;">
+                    <legend>Factura y domicilio</legend>
+                    
+                    <label for="respuesta_factura">Solicitar factura:</label>
+                    <input type="checkbox" value="Exterior" name="Exterior" id="respuesta_factura">
+                    <br>
+                    <label for="respuesta_factura_tipo">Tipo de factura:</label>
+                    <select id="respuesta_factura_tipo">
+                        <option value="">Papel</option>
+                        <option value="">Digital</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <label for="respuesta_direccion">Dirección Completa:</label>
+                    <input type="text" placeholder="Calle y número" name="Exterior" id="respuesta_direccion" required>
+                    <br>
+                    <label for="respuesta_cp">Código Postal:</label>
+                    <input type="text" placeholder="00000" name="Exterior" id="respuesta_cp" required>
+                    <br>
+                    <label for="respuesta_lugar_exterior">Ciudad:</label>
+                    <br>
+                    <input type="radio" value="A_Coruña" name="ciudad" id="respuesta_ciudad_coruna" required>
+                    <label for="respuesta_ciudad_coruna">A Coruña</label>
+                    <br>
+                    <input type="radio" value="Carballo" name="ciudad" id="respuesta_ciudad_carballo" required>
+                    <label for="respuesta_ciudad_carballo">Carballo</label>
+                    <br>
+                    <input type="radio" value="Ferro" name="ciudad" id="respuesta_ciudad_ferrol" required>
+                    <label for="respuesta_ciudad_ferrol">Ferrol</label>
+                </fieldset>
+
+                <fieldset style="width: 50%;">
+                    <legend>Datos de la entrega</legend>
+
+                    <label for="FechaReserva">Día deseado de la entrega:</label>
+                    <input type="date" id="FechaReserva" name="Fecha y hora" required>
+
+                    <label for="FechaReserva">Ayude al repartidor con una foto (Opcional):</label>
+                    <input type="file" id="FotoDomicilio" name="Foto">
+                </fieldset>
+            </div>
+
+            <fieldset>
+                <legend>Acciones</legend>
+
+                <input type="submit" title="Solicitar reserva">
+                <input type="reset" title="Reiniciar respuestas">
+            </fieldset>
+        </form>
+    </body>
+</html>
