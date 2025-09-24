@@ -9,6 +9,26 @@ Sirve para crear agrupaciones de etiquetas permitiendo una mejor organización.
 &lt;div&gt;<span class="c1">...</span>&lt;/div&gt;
 
 
+&lt;footer&gt;<span class="c1">...</span>&lt;/footer&gt;
+
+
+Podemos añadir una descripción debajo de una imágen (leyenda).
+
+&lt;figure&gt;
+&lt;img src="<span class="c1">URL</span>" alt="<span class="c1">Definición</span>"&gt;
+&lt;ficaption&gt;<span class="c1">Leyenda</span>&lt;/ficaption&gt;
+&lt;/figure&gt;
+
+
+Para crear títulos se usa la etiqueta header (h) seguido de un número del 1 al 6, siendo el 1 el título principal y el 6 el nivel más bajo.
+&lt;h1&gt;<span class="c1">Título</span>&lt;/h1&gt;
+
+
+Crea una división en el contenido mediante una línea.
+
+&lt;hr&gt;
+
+
 Lista de descripciones
 
 Crearemos la lista con:
@@ -20,3 +40,17 @@ Crearemos la lista con:
 &lt;/dl&gt;
 
 
+Listas ordenadas:
+
+&lt;ol&gt;
+    &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
+    <span class="c1">...</span>
+&lt;/ol&gt;
+
+
+Listas desordenadas:
+
+&lt;ul&gt;
+    &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
+    <span class="c1">...</span>
+&lt;/ul&gt;
