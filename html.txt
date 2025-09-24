@@ -14,6 +14,9 @@ Lista de descripciones
 Crearemos la lista con:
 
 &lt;dl&gt;
-&lt;dt&gt;&lt;/dt&gt;
-&lt;dd&gt;&lt;/dd&gt;
+    &lt;dt&gt;<span class="c1">Término a definir</span>&lt;/dt&gt;
+    &lt;dd&gt;<span class="c1">Definición</span>&lt;/dd&gt;
+    <span class="c1">...</span>
 &lt;/dl&gt;
+
+
