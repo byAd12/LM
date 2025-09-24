@@ -1,0 +1,19 @@
+Se representa una caja de dialógo u otro componete interactivo, como una ventana. <span class="positivo">open</span> indica que está activo y disponible para interactuar.
+
+&lt;dialog <span class="c2">open</span>&gt;
+&lt;p&gt;<span class="c1">A devolución realizouse correctamente</span>&lt;/p&gt;
+&lt;/dialog&gt;
+
+
+Sirve para crear agrupaciones de etiquetas permitiendo una mejor organización.
+&lt;div&gt;<span class="c1">...</span>&lt;/div&gt;
+
+
+Lista de descripciones
+
+Crearemos la lista con:
+
+&lt;dl&gt;
+&lt;dt&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;/dd&gt;
+&lt;/dl&gt;
