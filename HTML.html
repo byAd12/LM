@@ -48,23 +48,30 @@ Código por Adrián L. G. P.
                 <td class="titulo" colspan="2">BÁSICO</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;!DOCTYPE <span class="c1">html</span>&gt;</td>
+                <td class="opcion"><pre>&lt;!DOCTYPE <span class="c1">html</span>&gt;</pre></td>
                 <td>Se coloca en la primera línea del documento para especificar que es un archivo de tipo html.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;html&gt;<br><span class="c1">...</span><br>&lt;/html&gt;</td>
+                <td class="opcion"><pre>&lt;html&gt;
+    <span class="c1">...</span>
+&lt;/html&gt;</pre></td>
                 <td>Elemento raíz del documento. Debe contener todo el contenido dentro.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;head&gt;<br><span class="c1">...</span><br>&lt;/head&gt;</td>
-                <td>Primer elemento dentro de la etiqueta <span class="positivo">&lt;head&gt;</span> que contiene dentro ciertas etiquetas para interpretar el documento.<br>No es visible el documento expecto en ciertos casos.</td>
+                <td class="opcion"><pre>&lt;head&gt;
+    <span class="c1">...</span>
+&lt;/head&gt;</pre></td>
+                <td>Primer elemento dentro de la etiqueta <span class="positivo">&lt;head&gt;</span> que contiene dentro ciertas etiquetas para interpretar el documento.
+                    <br>No es visible el documento expecto en ciertos casos.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;body&gt;<br><span class="c1">...</span><br>&lt;/body&gt;</td>
+                <td class="opcion"><pre>&lt;body&gt;
+    <span class="c1">...</span>
+&lt;/body&gt;</pre></td>
                 <td>Elemento donde se colocarán los elementos físicos del documento.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;!-- <span class="c1">COMENTARIO</span> --&gt;</td>
+                <td class="opcion"><pre>&lt;!-- <span class="c1">COMENTARIO</span> --&gt;</pre></td>
                 <td>Un comentario es una anotación dentro del documento que solo es visible para el desarrollador del documento.</td>
             </tr>
 
@@ -74,26 +81,26 @@ Código por Adrián L. G. P.
                 <td class="titulo" colspan="2">ETIQUETAS DENTRO DE &lt;head&gt;</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;title&gt;<span class="c1">...</span>&lt;/title&gt;</td>
+                <td class="opcion"><pre>&lt;title&gt;<span class="c1">...</span>&lt;/title&gt;</pre></td>
                 <td>Elemento raíz del documento. Debe contener todo el contenido dentro.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">charset="UTF-8"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">charset="UTF-8"</span>&gt;</pre></td>
                 <td>Especificamos la codificación de carácteres del documento.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">name="viewport" content="width=device-width", initial-scale="1.0"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">name="viewport" content="width=device-width", initial-scale="1.0"</span>&gt;</pre></td>
                 <td>Especificamos un metadato de la <span class="advertencia">ventana gráfica</span> que ayuda a los navegadores web a hacer webs responsives en dispositivos móviles. A parte hay que crear <span class="positivo">@media</span> queries.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">http-equiv="Content-Type" content="text/html"; charset="UTF-8"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">http-equiv="Content-Type" content="text/html"; charset="UTF-8"</span>&gt;</pre></td>
                 <td>Especificamos qué tipo de contenido es y el tipo de codificación de carácteres.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0"</span>&gt;</pre></td>
                 <td>
                     Especificamos un metadato del <span class="advertencia">navegador</span>: Si debe guardar la página web en caché y cuanto tiempo. Opciones de <u>content</u> (ponerlas separadas por comas):<br><br>
                     <span class="positivo">no-store</span>: Evita que el navegador guarde cualquier copia.<br>
@@ -104,27 +111,27 @@ Código por Adrián L. G. P.
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">http-equiv="refresh" content="3; url=URL"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">http-equiv="refresh" content="3; url=URL"</span>&gt;</pre></td>
                 <td>Especificamos que, pasado 3 segundos, cargue otra página o refresque la actual.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1">name="robots" content="noindex"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1">name="robots" content="noindex"</span>&gt;</td>
                 <td>Especificamos que a los motores de búsqueda no indexen esta página como un resultado.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1"> name="keywords" content="PALABRA1, PALABRA2, ..."</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1"> name="keywords" content="PALABRA1, PALABRA2, ..."</span>&gt;</pre></td>
                 <td>Especificamos a los motores de búsqueda unas palabras clave para clasificar el contenido.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1"> name="author" content="AUTOR"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1"> name="author" content="AUTOR"</span>&gt;</pre></td>
                 <td>Especificamos el autor del documento.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;meta <span class="c1"> name="copyright" content="AUTOR"</span>&gt;</td>
+                <td class="opcion"><pre>&lt;meta <span class="c1"> name="copyright" content="AUTOR"</span>&gt;</pre></td>
                 <td>Especificamos el autor que posée el copyright del documento.</td>
             </tr>
 
@@ -141,78 +148,84 @@ Código por Adrián L. G. P.
                 <td class="titulo" colspan="2">ELEMENTOS DE BLOQUE</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;header&gt;<br><span class="c1">...</span><br>&lt;/header&gt;</td>
+                <td class="opcion"><pre>&lt;header&gt;
+    <span class="c1">...</span>
+&lt;/header&gt;</pre></td>
                 <td>.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;section&gt;<br><span class="c1">...</span><br>&lt;/section&gt;</td>
+                <td class="opcion"><pre>&lt;section&gt;
+    <span class="c1">...</span>
+&lt;/section&gt;</pre></td>
                 <td>.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;article&gt;<br><span class="c1">...</span><br>&lt;/article&gt;</td>
+                <td class="opcion"><pre>&lt;article&gt;
+    <span class="c1">...</span>
+&lt;/article&gt;</pre></td>
                 <td>.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;aside&gt;<br><span class="c1">...</span><br>&lt;/aside&gt;</td>
+                <td class="opcion"><pre>&lt;aside&gt;
+    <span class="c1">...</span>
+&lt;/aside&gt;</pre></td>
                 <td>.</td>
             </tr>
 
             <tr>
-                <td class="opcion">&lt;address&gt;<span class="c1">...</span>&lt;/address&gt;</td>
+                <td class="opcion"><pre>&lt;address&gt;<span class="c1">...</span>&lt;/address&gt;</pre></td>
                 <td>Para representar información de una dirección física. Puede ponerse links y texto dentro.</td>
             </tr>
             <tr>
-                <td class="opcion">&lt;blockquote cite="<span class="c1">URL</span>"&gt;<span class="c1">...</span>&lt;/blockquote&gt;</td>
+                <td class="opcion"><pre>&lt;blockquote cite="<span class="c1">URL</span>"&gt;<span class="c1">...</span>&lt;/blockquote&gt;</pre></td>
                 <td>Añadir una cita de una fuente externa. Se puede poner un <span class="positivo">&lt;p&gt;&lt;/p&gt;</span> dentro con el texto de la cita.</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;details&gt;<br>
-                        &lt;summary&gt;<span class="c1">Nota resumida</span>&lt;summary&gt;
-                        <span class="c1">Contenido detallado</span><br>
-                    &lt;/details&gt;</td>
+                <td class="opcion"><pre>
+&lt;details&gt;
+    &lt;summary&gt;<span class="c1">Nota resumida</span>&lt;summary&gt;
+    <span class="c1">Contenido detallado</span>
+&lt;/details&gt;</pre>
+                </td>
                 <td>Podemos hacer que al hacer click a <span class="positivo">&lt;summary&gt;</span> se oculte/muestre el contenido detallado.</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;dialog <span class="c2">open</span>&gt;
-                        &lt;p&gt;<span class="c1">A devolución realizouse correctamente</span>&lt;/p&gt;
-                    &lt;/dialog&gt;
+                <td class="opcion"><pre>
+&lt;dialog <span class="c2">open</span>&gt;
+    &lt;p&gt;<span class="c1">A devolución realizouse correctamente</span>&lt;/p&gt;
+&lt;/dialog&gt;</pre>
                 </td>
                 <td>Se representa una caja de dialógo u otro componete interactivo, como una ventana. <span class="positivo">open</span> indica que está activo y disponible para interactuar.</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;div&gt;<span class="c1">...</span>&lt;/div&gt;
+                <td class="opcion"><pre>&lt;div&gt;<span class="c1">...</span>&lt;/div&gt;</pre>
                 </td>
                 <td>Sirve para crear agrupaciones de etiquetas permitiendo una mejor organización.</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;figure&gt;
-                    &lt;img src="<span class="c1">URL</span>" alt="<span class="c1">Definición</span>"&gt;
-                    &lt;ficaption&gt;<span class="c1">Leyenda</span>&lt;/ficaption&gt;
-                    &lt;/figure&gt;
+                <td class="opcion"><pre>
+&lt;figure&gt;
+    &lt;img src="<span class="c1">URL</span>" alt="<span class="c1">Definición</span>"&gt;
+    &lt;ficaption&gt;<span class="c1">Leyenda</span>&lt;/ficaption&gt;
+&lt;/figure&gt;</pre>
                 </td>
                 <td>Podemos añadir una descripción debajo de una imágen (leyenda).</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;h1&gt;<span class="c1">Título</span>&lt;/h1&gt;
+                <td class="opcion"><pre>&lt;h1&gt;<span class="c1">Título</span>&lt;/h1&gt;</pre>
                 </td>
                 <td>Para crear títulos se usa la etiqueta header (h) seguido de un número del 1 al 6, siendo el 1 el título principal y el 6 el nivel más bajo.</td>
             </tr>
             <tr>
-                <td class="opcion">
-                    &lt;hr&gt;
+                <td class="opcion"><pre>&lt;hr&gt;</pre>
                 </td>
                 <td>Crea una división en el contenido mediante una línea.</td>
             </tr>
 
             <tr>
-                <td class="opcion">
+                <td class="opcion"><pre>
                     
-                </td>
+                </pre></td>
                 <td></td>
             </tr>
             <!-- ================== -->
@@ -223,32 +236,32 @@ Código por Adrián L. G. P.
 
         <table class="tabla_cmd">
             <tr>
-                <td class="opcion">
-                &lt;dl&gt;
-                    &lt;dt&gt;<span class="c1">Término a definir</span>&lt;/dt&gt;
-                    &lt;dd&gt;<span class="c1">Definición</span>&lt;/dd&gt;
-                    <span class="c1">...</span>
-                &lt;/dl&gt;
+                <td class="opcion"><pre>
+&lt;dl&gt;
+    &lt;dt&gt;<span class="c1">Término a definir</span>&lt;/dt&gt;
+    &lt;dd&gt;<span class="c1">Definición</span>&lt;/dd&gt;
+    <span class="c1">...</span>
+&lt;/dl&gt;</pre>
                 </td>
                 <td>Creamos una lista de descripciones</td>
             </tr>
 
             <tr>
-                <td class="opcion">
-                    &lt;ol&gt;
-                        &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
-                        <span class="c1">...</span>
-                    &lt;/ol&gt;
+                <td class="opcion"><pre>
+&lt;ol&gt;
+    &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
+    <span class="c1">...</span>
+&lt;/ol&gt;</pre>
                 </td>
                 <td>Listas ordenadas.</td>
             </tr>
 
             <tr>
-                <td class="opcion">
-                    &lt;ul&gt;
-                        &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
-                        <span class="c1">...</span>
-                    &lt;/ul&gt;
+                <td class="opcion"><pre>
+&lt;ul&gt;
+    &lt;li&gt;<span class="c1">Elemento de la lista</span>&lt;/li&gt;
+    <span class="c1">...</span>
+&lt;/ul&gt;</pre>
                 </td>
                 <td>Listas desordenadas</td>
             </tr>
