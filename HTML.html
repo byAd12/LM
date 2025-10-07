@@ -86,7 +86,7 @@ Código por Adrián L. G. P.
             </tr>
             <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;title&gt;...&lt;/title&gt;</code></pre>
-                <td>Elemento raíz del documento. Debe contener todo el contenido dentro.</td>
+                <td>.</td>
             </tr>
             <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;meta charset="UTF-8"&gt;</code></pre></td>
@@ -156,6 +156,12 @@ Código por Adrián L. G. P.
                 <td class="titulo" colspan="2">ELEMENTOS DE BLOQUE</td>
             </tr>
             <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;main&gt;
+    ...
+&lt;/main&gt;</code></pre></td>
+                <td>Se coloca por motivos semánticos para englobar las etiquetas header, section, article y aside, no pudiendo estar dentro de ellas.</td>
+            </tr>
+            <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;header&gt;
     ...
 &lt;/header&gt;</code></pre></td>
@@ -165,19 +171,25 @@ Código por Adrián L. G. P.
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;section&gt;
     ...
 &lt;/section&gt;</code></pre></td>
-                <td>.</td>
+                <td>Sirve para agrupar la información relacionada y dependiente.</td>
             </tr>
             <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;article&gt;
     ...
 &lt;/article&gt;</code></pre></td>
-                <td>.</td>
+                <td>Sirve para agrupar la información que está relacionada entre sí y además es independiente de otros bloques.</td>
             </tr>
             <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;aside&gt;
     ...
 &lt;/aside&gt;</code></pre></td>
                 <td>.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;nav&gt;
+    ...
+&lt;/nav&gt;</code></pre></td>
+                <td>Se utiliza para almacenar enlaces de navegación tanto internos como externos.</td>
             </tr>
 
             <tr>
@@ -217,11 +229,192 @@ Código por Adrián L. G. P.
                 <td>Para crear títulos se usa la etiqueta header (h) seguido de un número del 1 al 6, siendo el 1 el título principal y el 6 el nivel más bajo.</td>
             </tr>
             <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;p&gt;Párrafo&lt;/p&gt;</code></pre></td>
+                <td>Deilimita un párrafo del texto. No respeta multiples espacios, tabulaciones ni saltos de línea.</td>
+            </tr>
+                    <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;pre&gt;Párrafo&lt;/pre&gt;</code></pre></td>
+                <td>Representa un texto tal como se especifica en el documento, respetando espacios, saltos de línea y tabulaciones.</td>
+            </tr>
+            <tr>
                 <td class="opcion"><pre class="opcion"><code class="language-html">&lt;hr&gt;</code></pre></td>
                 <td>Crea una división en el contenido mediante una línea.</td>
             </tr>
             <!-- ================== -->
             <!-- ================== -->
+        </table>
+        
+        <!-- ......................................................... -->
+        <!-- ......................................................... -->
+        <div style="height: 30px;"></div>
+        <!-- ......................................................... -->
+        <!-- ......................................................... -->
+
+        <table class="tabla_cmd_html">
+            <tr>
+                <td class="titulo" colspan="2">ELEMENTOS DE LÍNEA</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;a href="URL" target="_blank" type="text/html"&gt;Enlace&lt;/a&gt;</code></pre></td>
+                <td>Especificamos un enlace a un texto. Al presionarlo nos llevará a la URL especificada en href. target sirve para poder especificar como se comporta el abrir el enlace, como en una nueva pestaña con _blank.
+                <br><br>
+                Además podemos hacer que la URL sea un enlace interno o externo. Si es interno se especificará #ID, cambiando el ID por el que se especicó en un documento mediante id="...". Si es externo simplemente se especifica la URL del destino.
+                <br>
+                Por último, podemos apuntar a un correo electrónico poniendo la URL como: mailto:CORREO</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;abbr title="SIGNIFICADO"&gt;Abreviación&lt;/abbr&gt;</code></pre></td>
+                <td>Podemos especificar abreviaciones de una palabra y su significado en title="", que al hacer hover se enseñará.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;b&gt;Texto&lt;/b&gt;</code></pre></td>
+                <td>Podemos poner en negrita un texto.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;strong&gt;Texto&lt;/strong&gt;</code></pre></td>
+                <td>Podemos poner en negrita un texto pero además el navegador lo interpreta como importante.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;bdi&gt;Texto&lt;/bdi&gt;</code></pre></td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;bdo&gt;Texto&lt;/bdo&gt;</code></pre></td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;br&gt;</code></pre></td>
+                <td>Para hacer un salto de línea en párrafos. El método tradicional (\n) no se interpreta en html.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;cite&gt;"Texto de la cita"&lt;/cite&gt;</code></pre></td>
+                <td>Otro método para especificar una cita dentro en una línea.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;code&gt;Pedazo de código&lt;/code&gt;</code></pre></td>
+                <td>Se especifica dentro en una línea que hay un bloque de lenguaje de programación.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;data value="VALOR_REAL"&gt;Valor formateado&lt;/data&gt;</code></pre></td>
+                <td>Asocia un contenido con un valor que sirve para poder representarlo y procesarlo. No es visible para el usuario.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;del datetime="HORARIO" cite="URL"&gt;Contenido Borrado&lt;/del&gt;</code></pre></td>
+                <td>Se especifica que un contenido fué borrado dando la razón de ella en cite="", especificando la URL donde explique el cambio. datetime="" es la fecha de cuando se produjo la eliminación del contenido.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;ins datetime="HORARIO" cite="URL"&gt;Contenido Añadido&lt;/ins&gt;</code></pre></td>
+                <td>Al contrario de &lt;del&gt;, indica que un contenido fué insertado. Tiene los 2 mismos atributos que &lt;del&gt;.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;dfn&gt;Texto de referencia&lt;/dfn&gt;</code></pre></td>
+                <td>Dentro de un &lt;p&gt;, &lt;section&gt; o un &lt;dl&gt; se da con esta etiqueta una referencia al bloque al que pertenece, marcándose en italic para dar una identificación visual.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;em&gt;Texto&lt;/em&gt;</code></pre></td>
+                <td>Sirve para remarcar una palabra marcada podiendolo en cursiva dándole un significado semántico.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;i&gt;Texto&lt;/i&gt;</code></pre></td>
+                <td>Sirve para poner en cursiva una palabra pero no da un significado semántico.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;kbd&gt;CTRL + ALT + SUPR&lt;/kbd&gt;</code></pre></td>
+                <td>Permite indicar que el usaurio debe insertar ese contenido. Cada navegador representa ese contenido de una manera u otra.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;mark&gt;Texto resaltado&lt;/mark&gt;</code></pre></td>
+                <td>Resalta el texto especificado marcándolo con color de fondo amarillo.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;script src="URI" type="LENGUAJE"&gt;
+    ...
+&lt;/script&gt;</code></pre></td>
+                <td>Si la ejecución de javascript del lado del cliente está permitida, enseñará el contenido dentro de esta etiqueta o lo cargará del archivo especificado en src="". Se define el lenguaje de programación usado con type="".</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;noscript&gt;
+    ...
+&lt;/noscript&gt;</code></pre></td>
+                <td>Si la ejecución de javascript del lado del cliente está bloqueada, enseñará el contenido dentro de esta etiqueta.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;slot&gt;...&lt;/slot&gt;</code></pre></td>
+                <td>Etiqueta que permite definir componentes reutilizables.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;q cite="URL"&gt;Contenido de la cita&lt;/q&gt;</code></pre></td>
+                <td>Indicamos una cita literal donde el texto se enmarccará entre comillas. cite="" es el enlace al lugar de donde sacaste la cita.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;s&gt;Texto&lt;/s&gt;</code></pre></td>
+                <td>Tacha un texto con una linea horizontal en mitad de las palabras.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;samp&gt;Texto&lt;/samp&gt;</code></pre></td>
+                <td>Define un mensaje que da el sistema que actua igual que &lt;pre&lt; con los carácteres.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;small&gt;Texto&lt;/small&gt;</code></pre></td>
+                <td>Define un comentario al margen del contenido. Utilizado para representar avisos, mensajes, copyright, etc.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;sub&gt;Texto&lt;/sub&gt;</code></pre></td>
+                <td>Podemos poner un subíncide.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;sup&gt;Texto&lt;/sup&gt;</code></pre></td>
+                <td>Podemos poner un superíndice.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;template&gt;...&lt;/template&gt;</code></pre></td>
+                <td>Permite crear modelos mediante JavaScript para que funcione.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;date datetime="FECHA"&gt;Texto indicando la fecha&lt;/date&gt;</code></pre></td>
+                <td>Representa una fecha mediante un atributo datetime="".</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;var&gt;Texto&lt;/var&gt;</code></pre></td>
+                <td>Indica que el texto marcado es el nombre de una expresión matemática o informática. Además pone en cursiva el texto.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;wbr&gt;Parte de la palabra que se puede separar&lt;/wbr&gt;</code></pre></td>
+                <td>Si una plaabra no cabe en una línea tiende a saltar todo a la siguiente. Si indicamos un fragmento con esta etiqueta, se partirá en ese punto.</td>
+            </tr>
+            
+
+        </table>
+
+
+        <!-- ......................................................... -->
+        <!-- ......................................................... -->
+        <div style="height: 30px;"></div>
+        <!-- ......................................................... -->
+        <!-- ......................................................... -->
+
+        <table class="tabla_cmd_html">
+            <tr>
+                <td class="titulo" colspan="2">CONTENIDO INCRUSTADO</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;embed src="URI" type="TIPO_MIME" width="ANCHO_EN_PX" height="ALTURA_EN_PX" /&gt;</code></pre></td>
+                <td>Permite incrustar un elemento externo generado por otra aplicación dandole forma con width="" y height="", además de indicando su tipo MIME específico con type="".
+                    <br>
+                    No se recomienda su uso si son elementos fueras de los estándares.
+                </td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;iframe src="URI" srcdoc="CÓDIGO_HTML" sandbox="..." type="TIPO_MIME" width="ANCHO_EN_PX" height="ALTURA_EN_PX" loading="lazy/eager" allow allowfullscreen  /&gt;</code></pre></td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td class="opcion"><pre class="opcion"><code class="language-html">&lt;object data="" type="" name="" usemap="" form="" width="" height=""  /&gt;</code></pre></td>
+                <td>.</td>
+            </tr>
+
+            <td>PAG 36</td>
+
         </table>
 
         <!-- ......................................................... -->
@@ -256,7 +449,7 @@ Código por Adrián L. G. P.
     &lt;li&gt;Elemento de la lista&lt;/li&gt;
     ...
 &lt;/ul&gt;</code></pre></td>
-                <td>Listas desordenadas</td>
+                <td>Listas desordenadas.</td>
             </tr>
         </table>
 
